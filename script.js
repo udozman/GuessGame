@@ -51,7 +51,7 @@ document.querySelector('.again').addEventListener('click', function(){
   document.querySelector('body').style.backgroundColor = "#222";
   document.querySelector('.message').textContent = "Start guessing...";
   document.querySelector('.score').textContent = "20";
-//document.querySelector('.highscore').textContent = '20';
+  score = 20;
   document.querySelector('.number').textContent = '?';
   secretNumber = Math.floor((Math.random() * 20) + 1);
   console.log(secretNumber);
