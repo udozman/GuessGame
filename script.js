@@ -15,9 +15,11 @@ document.querySelector(".check").addEventListener('click', function(){
       document.querySelector('.message').textContent = "Correct Number😊";
         document.querySelector('body').style.backgroundColor = '#64eb34';
         document.querySelector('.number').textContent = secretNumber;
+      if(score > highScore){
+          highScore = score;
       document.querySelector('.highscore').textContent = highScore;
-       
-        
+          }
+      
     }else{
       document.querySelector('.message').textContent = "Correct but you've run out of guesses😒";
       document.querySelector('body').style.backgroundColor = '#34b7eb';
